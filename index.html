@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Catalog</title>
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <div class="container row">
+    <h1 class="text-center">Movies Catalog</h1>
+    <div class="col-4 p-5">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input class="form-control" type="text" name="Film Name" placeholder="ave" pattern="^([a-z]+)">
+
+        <input class="form-control mt-4" type="text" name="number" placeholder="5" pattern="[0-9]+">
+
+        <select name="Serie" class="form-select mt-4">
+          <option>All</option>
+          <option>1-variant</option>
+          <option>2-variant</option>
+          <option>3-variant</option>
+        </select>
+
+        <select name="Rating" class="form-select mt-4">
+          <option>Rating (high to low)</option>
+          <option>High</option>
+          <option>Middle</option>
+          <option>Low</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary w-100 mt-4">Search</button>
+
+      </form>
+      <h3 class="mt-5">Bookmarked Movies</h3>
+      <div class="bookmark">
+        <div class="p-3 book">
+          <p>Avengers:Infinity war</p>
+          <button class="btn btn-danger mt-0">Remove</button>
+        </div>
+        <div class="p-3 book">
+          <p>Avengers:Infinity war</p>
+          <button class="btn btn-danger mt-0">Remove</button>
+        </div>
+        <div class="p-3 book">
+          <p>Avengers:Infinity war</p>
+          <button class="btn btn-danger mt-0">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8 p-5">
+      <h4>Search results: 39</h4>
+      <div class="alert alert-info "> Use the form on the left to search for a movie</div>
+      <div class="d-flex justify-content-between">
+
+        <div class="card" style="width: 22rem;">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/infinity.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/infinity1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/infinity2.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Avengers: Infinity war</h4>
+            <p class="card-text">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_15230_7)">
+                  <path
+                    d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM3.18125 3.75H16.8187C17.1937 3.75 17.5 4.03 17.5 4.375V5.625C17.5 5.97 17.195 6.25 16.8175 6.25H3.18125C2.80625 6.25 2.5 5.97 2.5 5.625V4.375C2.5 4.03 2.805 3.75 3.18125 3.75Z"
+                    fill="black" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_15230_7">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg> 2018
+            </p>
+            <p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.7364 6.89649L12.7774 6.17579L10.5606 1.68165C10.5001 1.5586 10.4005 1.45899 10.2774 1.39844C9.96883 1.2461 9.59383 1.37305 9.43953 1.68165L7.22273 6.17579L2.26374 6.89649C2.12702 6.91602 2.00202 6.98048 1.90632 7.07813C1.79062 7.19705 1.72686 7.35704 1.72906 7.52294C1.73126 7.68884 1.79923 7.84709 1.91804 7.9629L5.50593 11.4609L4.65827 16.4004C4.6384 16.5153 4.65111 16.6335 4.69498 16.7415C4.73884 16.8496 4.8121 16.9432 4.90645 17.0117C5.0008 17.0802 5.11247 17.1209 5.22878 17.1292C5.3451 17.1375 5.46141 17.113 5.56452 17.0586L10.0001 14.7266L14.4356 17.0586C14.5567 17.1231 14.6973 17.1445 14.8321 17.1211C15.172 17.0625 15.4005 16.7402 15.3419 16.4004L14.4942 11.4609L18.0821 7.9629C18.1798 7.8672 18.2442 7.74219 18.2638 7.60548C18.3165 7.26368 18.0782 6.94727 17.7364 6.89649V6.89649Z"
+                  fill="#FFD700" />
+              </svg> 8.7
+            </p>
+            <a href="#" class="btn btn-outline-primary p-2 me-2" >Watch trailer</a>
+            <a href="#" class="btn btn-outline-info p-2 me-2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal1">More info</a>
+            <a href="#" class="btn btn-outline-success p-2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal1">Bookmark</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 22rem;">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/ironman.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/ironman1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/ironman2.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">The Avengers</h4>
+            <p class="card-text">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_15230_7)">
+                  <path
+                    d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM3.18125 3.75H16.8187C17.1937 3.75 17.5 4.03 17.5 4.375V5.625C17.5 5.97 17.195 6.25 16.8175 6.25H3.18125C2.80625 6.25 2.5 5.97 2.5 5.625V4.375C2.5 4.03 2.805 3.75 3.18125 3.75Z"
+                    fill="black" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_15230_7">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg> 2012
+            </p>
+            <p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.7364 6.89649L12.7774 6.17579L10.5606 1.68165C10.5001 1.5586 10.4005 1.45899 10.2774 1.39844C9.96883 1.2461 9.59383 1.37305 9.43953 1.68165L7.22273 6.17579L2.26374 6.89649C2.12702 6.91602 2.00202 6.98048 1.90632 7.07813C1.79062 7.19705 1.72686 7.35704 1.72906 7.52294C1.73126 7.68884 1.79923 7.84709 1.91804 7.9629L5.50593 11.4609L4.65827 16.4004C4.6384 16.5153 4.65111 16.6335 4.69498 16.7415C4.73884 16.8496 4.8121 16.9432 4.90645 17.0117C5.0008 17.0802 5.11247 17.1209 5.22878 17.1292C5.3451 17.1375 5.46141 17.113 5.56452 17.0586L10.0001 14.7266L14.4356 17.0586C14.5567 17.1231 14.6973 17.1445 14.8321 17.1211C15.172 17.0625 15.4005 16.7402 15.3419 16.4004L14.4942 11.4609L18.0821 7.9629C18.1798 7.8672 18.2442 7.74219 18.2638 7.60548C18.3165 7.26368 18.0782 6.94727 17.7364 6.89649V6.89649Z"
+                  fill="#FFD700" />
+              </svg> 8.1
+            </p>
+            <a href="#" class="btn btn-outline-primary p-2 me-2">Watch trailer</a>
+
+            <a href="#" class="btn btn-outline-info p-2 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">More
+              info</a>
+            <a href="#" class="btn btn-outline-success p-2" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Bookmark</a>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="btn-group btn__group" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary">1</button>
+        <button type="button" class="btn btn-outline-primary">2</button>
+        <button type="button" class="btn btn-outline-primary">3</button>
+        <button type="button" class="btn btn-outline-primary">4</button>
+      </div>
+
+
+
+      <!-- Modal window -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">OVERVIEW</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">An unprecedented cinematic journey ten years in the making and spanning the entire
+              Marvel Cinematic Universe, Marvel Studios' "Avengers: Infinity War" brings to the screen the ultimate,
+              deadliest showdown of all time.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">The Marvel Masterworks Collection</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">Crafted by Marvel Studios Prop Master Russell Bobbitt, these authentic prop
+              duplicates are now available to own!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

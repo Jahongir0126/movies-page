@@ -1,0 +1,9 @@
+.book{
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    &>p{font-weight: 700;}
+}
+.btn__group{
+    margin:60px;
+    margin-left: 320px;
+}
